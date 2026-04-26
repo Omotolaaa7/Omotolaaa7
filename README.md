@@ -20,38 +20,38 @@
 ## 🌟 À propos de moi
 
 > *"Si tu peux voir détruit l'ouvrage de ta vie… et sans dire un seul mot te mettre à rebâtir"*
-> — Rudyard Kipling, **Tu seras un homme, mon fils** *(un poème que mon père m'a offert, et qui résonne chaque fois que je débogue un modèle à 2h du matin 😄)*
+> — Rudyard Kipling, **Tu seras un homme, mon fils** *(un poème que mon père m'a offert, et qui résonne chaque fois que en moi)*
 
-Je m'appelle **Omotola**, étudiante en **L2 Intelligence Artificielle**, et je suis convaincue que les données ne mentent jamais — elles murmurent. Mon rôle ? Apprendre à les écouter.
+Je m'appelle **Omotola**, étudiante en **deuxième année de Licence en Intelligence Artificielle**, et je suis convaincue que les données ne mentent jamais  elles murmurent. Mon rôle ? Apprendre à les écouter.
 
-Ce qui me fascine dans la Data Science, c'est précisément ça : **révéler les structures invisibles qui se cachent dans le bruit**. Un dataset brut, c'est comme un puzzle dont on ne connaît pas encore le dessin — et je ne m'arrête pas avant de le voir apparaître.
+Ce qui me fascine dans la Data Science, c'est précisément ça : **révéler les structures invisibles qui se cachent dans le bruit**. Un dataset brut, c'est comme un puzzle dont on ne connaît pas encore le dessin et je ne m'arrête pas avant de le voir apparaître.
 
 Comme Kipling l'écrit, je crois profondément à l'art de **rêver sans laisser son rêve être son maître** — autrement dit : être ambitieuse, mais rigoureuse. Itérer. Douter. Recommencer. C'est comme ça qu'on construit de bons modèles, et de bonnes habitudes.
 
 ```python
 omotola = {
-    "formation"   : "L2 Intelligence Artificielle 🎓",
-    "passion"     : "Trouver les patterns cachés dans les données 🔍",
-    "philosophie" : "Construire, tester, rebâtir — toujours. ♟",
-    "fun_facts"   : ["Joueuse d'échecs ♟", "La musique aide à débugger 🎶", "Curiosité > sommeil ☕"],
+    "formation"   : "L2 Intelligence Artificielle ",
+    "passion"     : "Trouver les patterns cachés dans les données ",
+    "philosophie" : "Construire, tester, rebâtir puis répéter la boucle. ",
+    "fun_facts"   : ["Joueuse d'échecs ♟", "La musique aide à débugger 🎶", "Curiosité > sommeil "],
 }
 ```
 
 ---
 
-## 🚀 Mes projets phares
+##  Mes projets phares
 
-### 🔮 [ml\_projet\_ChurnClient](https://github.com/Omotolaaa7/ml_projet_ChurnClient) — *Prédire avant que le client ne parte*
+###  [ml\_projet\_ChurnClient](https://github.com/Omotolaaa7/ml_projet_ChurnClient) — *Prédire avant que le client ne parte*
 
 > **Et si une entreprise pouvait savoir, avant même que le client le réalise, qu'il est sur le point de partir ?**
 
-C'est exactement l'enjeu de ce projet. Sur un dataset de **7 043 clients Telco**, j'ai mené une analyse exploratoire complète pour identifier les signaux faibles du churn — type de contrat, ancienneté, méthode de paiement, services souscrits — et construit un pipeline de prédiction ML de bout en bout, avec une interface de démonstration via `app.py`.
+C'est exactement l'enjeu de ce projet. Sur un dataset de **7 043 clients Telco**, j'ai mené une analyse exploratoire complète pour identifier les signaux faibles du churn type de contrat, ancienneté, méthode de paiement, services souscrits et construit un pipeline de prédiction ML de bout en bout, avec une interface de démonstration via `app.py`.
 
 **Ce que tu trouveras dans ce repo :**
-- 📂 Structure propre : `data/`, `notebooks/`, `src/`
-- 📊 EDA complète avec 12 visualisations clés
-- ⚙️ Preprocessing, feature engineering, métriques (Accuracy, F1, AUC-ROC)
-- 🖥️ Interface applicative `app.py`
+-  Structure propre : `data/`, `notebooks/`, `src/`
+-  EDA complète avec 12 visualisations clés
+-  Preprocessing, feature engineering, métriques (Accuracy, F1, AUC-ROC)
+-  Interface applicative `app.py`
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Omotolaaa7/ml_projet_ChurnClient)
 [![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)](https://github.com/Omotolaaa7/ml_projet_ChurnClient)
@@ -61,16 +61,16 @@ C'est exactement l'enjeu de ce projet. Sur un dataset de **7 043 clients Telco**
 
 ---
 
-### 📚 [SGBibliotheque](https://github.com/Omotolaaa7/SGBibliotheque) — *Une bibliothèque, zéro chaos* ⭐ 3 étoiles
+### [SGBibliotheque](https://github.com/Omotolaaa7/SGBibliotheque) — *Une bibliothèque* 
 
 > **Gérer des centaines de livres, de membres et d'emprunts sans perdre la tête ? C'est le défi de ce projet.**
 
 SGBibliotheque est un **système de gestion de bibliothèque complet** — livres, membres, emprunts, retours, et statistiques automatisées. Un projet qui prouve qu'une bonne structure de données change tout, même hors du Machine Learning.
 
 **Points forts :**
-- 📖 Gestion complète du cycle de vie des emprunts
-- 📊 Génération automatique de statistiques
-- 🏗️ Architecture propre et modulaire
+-  Gestion complète du cycle de vie des emprunts
+-  Génération automatique de statistiques
+-  Architecture propre et modulaire
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Omotolaaa7/SGBibliotheque)
 [![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/Omotolaaa7/SGBibliotheque)
@@ -173,8 +173,8 @@ Je suis toujours partante pour un échange autour de la Data, d'un projet collab
 
 <div align="center">
 
-*"Méditer, observer, connaître — sans jamais devenir sceptique ni destructeur."*
-**Rudyard Kipling** — et la meilleure description d'une bonne Data Scientist que j'aie jamais lue. 💜
+*"Méditer, observer, connaître sans jamais devenir sceptique ni destructeur."*
+**Rudyard Kipling** et la meilleure description d'une bonne Data Scientist que j'aie jamais lue. 💜
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,27&height=100&section=footer" width="100%"/>
 
