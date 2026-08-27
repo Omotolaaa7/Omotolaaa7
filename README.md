@@ -1,181 +1,108 @@
 <div align="center">
 
-<!-- BANNIÈRE -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,27&height=200&section=header&text=Omotola%20AFOUDA&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Data%20Science%20%7C%20Machine%20Learning%20%7C%20IA&descSize=18&descAlignY=58&animation=fadeIn" width="100%"/>
+# Omotola AFOUDA
 
-<!-- BADGES ANIMÉS -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Étudiante+en+L2+Intelligence+Artificielle+🎓;Chercheuse+de+patterns+cachés+🔍;Construire+%2C+rebâtir%2C+progresser+🚀;Python+%7C+Scikit-learn+%7C+Pandas+%7C+ML)](https://git.io/typing-svg)
+**Étudiante en 3ᵉ année de licence d'Intelligence Artificielle · Cotonou, Bénin**
 
-<br>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Omotola%20Afouda-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/omotola-afouda-852671319)
-[![Email](https://img.shields.io/badge/Email-andreaafouda@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:andreaafouda@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Omotolaaa7-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Omotolaaa7)
-![Visiteurs](https://komarev.com/ghpvc/?username=Omotolaaa7&style=for-the-badge&color=7C3AED&label=Visiteurs)
+[Mon portfolio](https://portfolio-omotola.vercel.app) ·
+[LinkedIn](https://www.linkedin.com/in/omotola-afouda) ·
+[andreaafouda@gmail.com](mailto:andreaafouda@gmail.com)
 
 </div>
 
 ---
 
-## 🌟 À propos de moi
+Je construis des modèles qui regardent des choses réelles : des carrefours
+saturés, des récoltes, des clients sur le point de partir. Ce que je préfère
+dans ce travail, c'est le moment où un tableau de chiffres bruts commence à
+répondre.
 
-> *"Si tu peux voir détruit l'ouvrage de ta vie… et sans dire un seul mot te mettre à rebâtir"*
-> — Rudyard Kipling, **Tu seras un homme, mon fils** *(un poème que mon père m'a offert, et qui résonne chaque fois que en moi)*
+Ma méthode tient en trois mots que je dois autant aux échecs qu'à un poème
+que mon père m'a offert : **itérer, douter, recommencer**. Le troisième est
+celui qui coûte.
 
-Je m'appelle **Omotola**, étudiante en **deuxième année de Licence en Intelligence Artificielle**, et je suis convaincue que les données ne mentent jamais  elles murmurent. Mon rôle ? Apprendre à les écouter.
-
-Ce qui me fascine dans la Data Science, c'est précisément ça : **révéler les structures invisibles qui se cachent dans le bruit**. Un dataset brut, c'est comme un puzzle dont on ne connaît pas encore le dessin et je ne m'arrête pas avant de le voir apparaître.
-
-Comme Kipling l'écrit, je crois profondément à l'art de **rêver sans laisser son rêve être son maître** — autrement dit : être ambitieuse, mais rigoureuse. Itérer. Douter. Recommencer. C'est comme ça qu'on construit de bons modèles, et de bonnes habitudes.
-
-```python
-omotola = {
-    "formation"   : "L2 Intelligence Artificielle ",
-    "passion"     : "Trouver les patterns cachés dans les données ",
-    "philosophie" : "Construire, tester, rebâtir puis répéter la boucle. ",
-    "fun_facts"   : ["Joueuse d'échecs ♟", "La musique aide à débugger 🎶", "Curiosité > sommeil "],
-}
-```
+> *« Si tu peux voir détruit l'ouvrage de ta vie, et sans dire un seul mot te
+> mettre à rebâtir »*
+> Rudyard Kipling, *Tu seras un homme, mon fils*
 
 ---
 
-##  Mes projets phares
+## Les projets qui comptent
 
-###  [ml\_projet\_ChurnClient](https://github.com/Omotolaaa7/ml_projet_ChurnClient) — *Prédire avant que le client ne parte*
+### [Détection de véhicules en trafic dense](https://github.com/Omotolaaa7/-traffic-vehicle-detection-yolov8)
 
-> **Et si une entreprise pouvait savoir, avant même que le client le réalise, qu'il est sur le point de partir ?**
+Un YOLOv8 pré-entraîné voit très bien une voiture qui remplit l'image. Filmé
+d'en haut, dans un embouteillage, il décroche. Ce projet mesure proprement ce
+qu'un fine-tuning change, et surtout ce qu'il change **sur les petits objets**.
 
-C'est exactement l'enjeu de ce projet. Sur un dataset de **7 043 clients Telco**, j'ai mené une analyse exploratoire complète pour identifier les signaux faibles du churn type de contrat, ancienneté, méthode de paiement, services souscrits et construit un pipeline de prédiction ML de bout en bout, avec une interface de démonstration via `app.py`.
+| | Pré-entraîné | Après fine-tuning |
+|---|---:|---:|
+| mAP@0.5 | 0.438 | **0.825** |
+| Rappel, petits véhicules | 0.122 | **0.694** |
+| Rappel, véhicules moyens | 0.373 | 0.879 |
+| Débit | 37.2 FPS | 43.2 FPS |
 
-**Ce que tu trouveras dans ce repo :**
--  Structure propre : `data/`, `notebooks/`, `src/`
--  EDA complète avec 12 visualisations clés
--  Preprocessing, feature engineering, métriques (Accuracy, F1, AUC-ROC)
--  Interface applicative `app.py`
+Le chiffre qui m'a servi de leçon est le 0.12. Le mAP global était bon, je m'y
+suis arrêtée, et c'est en découpant par taille d'objet que j'ai vu que neuf
+petits véhicules sur dix passaient à travers. Une moyenne peut être bonne
+pendant qu'un modèle rate l'essentiel.
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Omotolaaa7/ml_projet_ChurnClient)
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)](https://github.com/Omotolaaa7/ml_projet_ChurnClient)
-[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)](https://github.com/Omotolaaa7/ml_projet_ChurnClient)
-[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)](https://github.com/Omotolaaa7/ml_projet_ChurnClient)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat-square&logo=python&logoColor=white)](https://github.com/Omotolaaa7/ml_projet_ChurnClient)
+`Python` `YOLOv8` `PyTorch` · jeu de données BMD-45, environ 3 000 images
 
----
+### [ChurnClient](https://github.com/Omotolaaa7/ml_projet_ChurnClient)
 
-### [SGBibliotheque](https://github.com/Omotolaaa7/SGBibliotheque) — *Une bibliothèque* 
+Prédire quels clients vont partir avant qu'ils ne le décident eux-mêmes.
+7 043 clients, une analyse exploratoire complète, un pipeline de bout en bout.
+J'étais sûre de savoir qui partait : l'analyse a dit autre chose.
 
-> **Gérer des centaines de livres, de membres et d'emprunts sans perdre la tête ? C'est le défi de ce projet.**
+`Python` `pandas` `scikit-learn` `Jupyter`
 
-SGBibliotheque est un **système de gestion de bibliothèque complet** — livres, membres, emprunts, retours, et statistiques automatisées. Un projet qui prouve qu'une bonne structure de données change tout, même hors du Machine Learning.
+### [Prédiction des rendements agricoles en Afrique de l'Ouest](https://github.com/Omotolaaa7/west_africa-crop_yield_prediction)
 
-**Points forts :**
--  Gestion complète du cycle de vie des emprunts
--  Génération automatique de statistiques
--  Architecture propre et modulaire
+Maïs, riz, sorgho, mil. Une régression sur des données climatiques,
+socio-économiques et agronomiques venues de sources différentes, avec des
+unités et des granularités qui ne s'accordent pas. Le vrai travail était le
+nettoyage.
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/Omotolaaa7/SGBibliotheque)
-[![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/Omotolaaa7/SGBibliotheque)
+`R`
 
----
+### [Répartition équitable de l'eau](https://github.com/Omotolaaa7/equitable-water-distribution)
 
-## 🛠️ Compétences techniques
+Répartir l'eau sur un réseau de distribution quand la demande est incertaine.
+Optimisation quadratique par pénalisation, descente de gradient projetée,
+validation par simulation Monte-Carlo.
 
-### 🐍 Langages
+`Python`
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+### SkillZ, deuxième prix du hackathon HACKBYIFRI 2026
 
-### 📊 Data Science & Machine Learning
-
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-
-### 🔧 Outils & Environnements
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-
-### 🌱 En cours d'apprentissage
-
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+Une place de marché de compétences étudiantes pensée pour le contexte
+béninois : paiement MTN MoMo, Moov Money et Celtiis Cash, séquestre, notation
+dans les deux sens, connexion par matricule universitaire. De l'idée au
+prototype en 48 heures, en équipe.
 
 ---
 
-## 📈 Mes stats GitHub
+## Ce que je sais faire, et à quel point
 
-<div align="center">
+**Mon terrain quotidien.** Python, pandas, NumPy, scikit-learn, Matplotlib et
+Seaborn, et l'analyse exploratoire, qui est la partie que je préfère.
 
-<img src="https://github-readme-stats.vercel.app/api?username=Omotolaaa7&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=7C3AED&text_color=C9D1D9&include_all_commits=true&count_private=true" height="180"/>
+**En cours.** Vision par ordinateur avec YOLOv8, R, SQL et MySQL, Streamlit.
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Omotolaaa7&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=C9D1D9&langs_count=6" height="180"/>
+**Touché, compris, à approfondir.** React, Django et DRF, Java, Laravel.
 
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Omotolaaa7&theme=tokyonight&hide_border=true&background=0D1117&ring=A78BFA&fire=7C3AED&currStreakLabel=A78BFA" width="60%"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Omotolaaa7&bg_color=0D1117&color=A78BFA&line=7C3AED&point=ffffff&hide_border=true" width="95%"/>
-
-</div>
+Pas de barre de pourcentage ici : chaque ligne est adossée à un dépôt ou à un
+projet qu'on peut ouvrir.
 
 ---
 
-## 🗺️ Objectifs & Roadmap
+## Ailleurs
 
-```
-2025 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2026+
-  │
-  ├── ✅ EDA & visualisation avancée
-  ├── ✅ Pipeline ML de bout en bout (Churn Client)
-  ├── ✅ Gestion de projet structurée (SGBibliotheque)
-  │
-  ├── 🔄 Deep Learning — TensorFlow / PyTorch
-  ├── 🔄 Déploiement de modèles — Streamlit, FastAPI
-  ├── 🔄 Containerisation — Docker
-  │
-  └── 🎯 Objectif 2026 : Premier projet IA déployé en production
-                         & Stage / alternance Data Science
-```
+Les échecs, où mon souvenir le plus net est une défaite. Les histoires
+dessinées, Vinland Saga en tête. Et de la musique en fond, presque tout le
+temps, parce que le bon morceau est parfois la seule chose qui fait tenir un
+débogage.
 
-Ce que j'apprends en ce moment :
-- 🧮 **Maths solides** — algèbre linéaire, statistiques bayésiennes
-- 🤖 **Deep Learning** — réseaux de neurones, backpropagation
-- 🌐 **MLOps** — déployer un modèle ne devrait pas être un mystère
-
----
-
-## 🤝 Me contacter
-
-<div align="center">
-
-Je suis toujours partante pour un échange autour de la Data, d'un projet collaboratif, ou même d'une partie d'échecs. ♟
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Discutons%20!-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/omotola-afouda-852671319)
-[![Email](https://img.shields.io/badge/Email-Écris%20moi-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:andreaafouda@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Mes%20projets-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Omotolaaa7)
-
-</div>
-
----
-
-<div align="center">
-
-*"Méditer, observer, connaître sans jamais devenir sceptique ni destructeur."*
-**Rudyard Kipling** et la meilleure description d'une bonne Data Scientist que j'aie jamais lue. 💜
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,27&height=100&section=footer" width="100%"/>
-
-</div>
+Un stage, une mission, une partie d'échecs, ou une série à me conseiller :
+[écrivez-moi](mailto:andreaafouda@gmail.com).
